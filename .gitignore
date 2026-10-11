@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+venv/
+ENV/
+
+# Temporary and local IDE configurations
+.vscode/
+.idea/
+
+# Root level duplicates (tracked in data/ and scripts/ instead)
+/IRI-BRC-*.pdf
+/all_trains.csv
+/extract_trains.py
+
+# Files excluded until later sections
+analysis_queries.sql

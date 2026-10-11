@@ -1,0 +1,365 @@
+TrainNo,Name,Type,From,PF_From,Dep,To,PF_To,Arr,Duration,Halts,Distance,Days,Classes,source_file
+19417,Borivali - Vatva Exp,Exp,BRC,4,00:41,VTA,3,02:45,124,3,92 km,SFSMTWT,"II, SL",IRI-BRC-to-ADI.pdf
+12971,Bandra Trm - Bhavnagar Trm SF Exp,SF,BRC,6,00:54,ADI,1,02:30,96,1,100 km,SSMTWTF,,IRI-BRC-to-ADI.pdf
+12918,Hazrat Nizamuddin - Ahmedabad Gujarat Sampark,SKr,CYI,1,01:10,ADI,3,03:25,135,2,96 km,SF..T..,"3A, 2A, 1A, 3E",IRI-BRC-to-ADI.pdf
+20953,MGR Chennai Ctrl - Ahmedabad SF Exp,SF,BRC,,01:15,ADI,6,03:20,125,2,100 km,SFS....,,IRI-BRC-to-ADI.pdf
+09009,Bandra Trm - Bhuj Spl Fare SF Festival Spl,SF,BRC,,01:15,ADI,,03:10,115,0,100 km,S......,"SL, 3A",IRI-BRC-to-ADI.pdf
+21901,Bandra Trm - Barmer Humsafar SF Exp,Hms,BRC,6,01:15,ADI,4,03:15,120,2,100 km,.....F.,"SL, 3A",IRI-BRC-to-ADI.pdf
+19203,Bandra Trm - Veraval Exp,Exp,BRC,5,01:18,ADI,1,03:10,112,2,100 km,SF.....,,IRI-BRC-to-ADI.pdf
+12942,Parasnath Exp,SF,CYI,1,01:26,ADI,3,03:25,119,1,96 km,SF....T,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+12948,Azimabad SF Exp,SF,CYI,1,01:30,ADI,2,03:50,140,2,96 km,SF...W.,,IRI-BRC-to-ADI.pdf
+22907,Madgaon - Hapa Weekly SF Exp,SF,BRC,3,01:53,ADI,3,03:40,107,2,100 km,.....F.,,IRI-BRC-to-ADI.pdf
+19490,Gorakhpur - Ahmedabad Exp,Exp,CYI,1,01:55,ADI,9,04:05,130,1,96 km,SM.WTFS,"3A, 2A, 1A, 3E",IRI-BRC-to-ADI.pdf
+19424,Bhagalpur - Ahmedabad Amrit Bharat Exp,AB,CYI,,02:13,ADI,,05:25,192,1,96 km,.....F.,"II, SL",IRI-BRC-to-ADI.pdf
+22927,Lokshakti Exp,Exp,BRC,3,02:20,ADI,7,04:10,110,4,100 km,SMTWTFS,"3A, 2A, 1A, 3E",IRI-BRC-to-ADI.pdf
+14702,Amrapur Aravali Exp,Exp,BRC,3,02:43,ADI,1,04:25,102,2,100 km,SFSMTWT,,IRI-BRC-to-ADI.pdf
+22945,Saurashtra Mail,SF,BRC,6,02:57,ADI,1,04:55,118,2,100 km,SMTWTFS,"3A, 2A, 1A, 3E",IRI-BRC-to-ADI.pdf
+20943,Bandra Trm - Bhagat Ki Kothi Humsafar Exp,Hms,BRC,2,03:07,ADI,3,05:10,123,0,100 km,SF....T,,IRI-BRC-to-ADI.pdf
+12901,Gujarat Mail,SF,BRC,4,03:19,ADI,4,05:40,141,4,100 km,SFSMTWT,"3A, 2A, 1A, 3E",IRI-BRC-to-ADI.pdf
+20686,KSR Bengaluru - Gandhidham SF Exp,SF,BRC,4,03:45,ADI,1,05:30,105,1,100 km,......S,,IRI-BRC-to-ADI.pdf
+16532,KSR Bengaluru - Ajmer Garib Nawaz Exp,Exp,BRC,4,03:45,ADI,1,05:30,105,2,100 km,SF.....,,IRI-BRC-to-ADI.pdf
+20694,KSR Bengaluru - Jodhpur SF Exp,SF,BRC,4,03:45,ADI,1,05:30,105,2,100 km,.M.W...,,IRI-BRC-to-ADI.pdf
+16210,Mysuru - Ajmer Exp,Exp,BRC,4,03:45,ADI,1,05:30,105,2,100 km,..T.T..,"CC, 3A, 2A, 1A",IRI-BRC-to-ADI.pdf
+16534,KSR Bengaluru - Jodhpur Exp,Exp,BRC,4,03:45,ADI,1,05:30,105,1,100 km,S......,,IRI-BRC-to-ADI.pdf
+12906,Shalimar - Porbandar SF Exp,SF,BRC,6,04:11,ADI,1,05:55,104,1,100 km,SF.....,,IRI-BRC-to-ADI.pdf
+22906,Shalimar - Okha Weekly SF Exp,SF,BRC,3,04:11,ADI,1,05:55,104,1,100 km,..T....,,IRI-BRC-to-ADI.pdf
+19414,Kolkata - Ahmedabad Weekly Exp,Exp,CYI,1,04:13,ADI,4,07:25,192,2,96 km,......S,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+15559,Darbhanga - Ahmedabad Antyodaya Exp,Ant,CYI,1,04:13,ADI,,07:25,192,1,96 km,SF...W.,,IRI-BRC-to-ADI.pdf
+12843,Puri - Ahmedabad SF Exp,SF,BRC,4,04:21,ADI,8,06:25,124,2,100 km,SF..T.T,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+20861,Puri - Ahmedabad SF Exp,SF,BRC,2,04:21,ADI,5,06:25,124,1,100 km,SF...W.,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+12994,Puri - Gandhidham Weekly SF Exp,SF,BRC,3,04:21,ADI,3,06:10,109,0,100 km,.SFM...,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+21903,Bandra Trm - Bikaner AC SF Exp,ACSF,BRC,4,04:38,SBIB,,07:10,152,2,106 km,SF.M...,"CC, 3E",IRI-BRC-to-ADI.pdf
+22830,Shalimar - Bhuj SF Exp,SF,CYI,1,04:43,ADI,3,07:45,182,1,96 km,......S,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+16312,Thiruvananthapuram North - Shri Ganganagar Ex,Exp,BRC,3,04:46,ADI,1,06:40,114,0,100 km,......S,,IRI-BRC-to-ADI.pdf
+16336,Nagercoil - Gandhidham Weekly Exp,Exp,BRC,3,04:46,ADI,1,06:40,114,3,100 km,..T....,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+16338,Ernakulam - Okha Exp,Exp,BRC,3,04:46,ADI,1,06:40,114,2,100 km,...W.F.,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+16334,Thiruvananthapuram Ctrl - Veraval Exp,Exp,BRC,3,04:46,ADI,1,06:40,114,2,100 km,.M.....,,IRI-BRC-to-ADI.pdf
+19259,Thiruvananthapuram North - Bhavnagar Trm Exp,Exp,BRC,3,04:46,ADI,1,06:40,114,2,100 km,SF....T,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+20496,Hadapsar - Jodhpur SF Exp,SF,BRC,6,04:58,SBIB,,07:20,142,0,106 km,SSFMTWT,,IRI-BRC-to-ADI.pdf
+22903,Bandra Trm - Bhuj AC SF Exp,ACSF,BRC,3,05:04,ADI,3,06:30,86,0,100 km,SFS..W.,"2A, 1A, 3E",IRI-BRC-to-ADI.pdf
+09011,Bandra Trm - Bhuj Spl Fare SF Spl,SF,BRC,,05:16,ADI,,07:15,119,0,100 km,.SF.T..,,IRI-BRC-to-ADI.pdf
+09087,Mumbai Ctrl - Ahmedabad Spl Fare AC SF Spl,ACSF,BRC,,05:16,ADI,,07:20,124,0,100 km,SF...W.,,IRI-BRC-to-ADI.pdf
+22186,Ahimsa SF Exp,SF,BRC,3,05:26,ADI,1,07:35,129,2,100 km,...W...,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+11050,SCSMT Kolhapur - Ahmedabad Exp,Exp,BRC,2,05:26,ADI,6,07:35,129,2,100 km,......S,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+11090,Pune - Bhagat Ki Kothi Exp,Exp,BRC,6,05:26,ADI,3,07:25,119,3,100 km,S......,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+11088,Pune - Veraval Exp,Exp,BRC,2,05:26,ADI,,07:25,119,2,100 km,SF....T,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+22965,Bandra Trm - Bhagat Ki Kothi SF Exp,SF,BRC,3,05:26,ADI,3,07:25,119,0,100 km,SF.....,"3A, 2A, 1A, 3E",IRI-BRC-to-ADI.pdf
+20476,Miraj - Bikaner Weekly SF Exp,SF,BRC,,05:31,ADI,,07:25,114,2,100 km,..T....,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+11092,Pune - Bhuj Exp,Exp,BRC,2,05:33,ADI,7,07:25,112,3,100 km,.M.....,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+11464,Jabalpur - Veraval Exp,Exp,CYI,1,05:48,ADI,1,08:00,132,4,96 km,S.TWT.S,"3A, 2A, 1A, 3E",IRI-BRC-to-ADI.pdf
+11466,Jabalpur - Veraval Exp,Exp,CYI,1,05:48,ADI,1,08:00,132,4,96 km,.M...F.,"3A, 2A, 1A, 3E",IRI-BRC-to-ADI.pdf
+22923,Bandra Trm - Jamnagar Humsafar Exp,Hms,BRC,2,05:49,ADI,4,07:45,116,1,100 km,.M..T.S,"SL, 3A",IRI-BRC-to-ADI.pdf
+12997,Bandra Trm - Barmer Humsafar Exp,Hms,BRC,,05:50,ADI,,07:45,115,2,100 km,SF...W.,"SL, 3A",IRI-BRC-to-ADI.pdf
+12950,Santragachi - Porbandar Kavi Guru SF Exp,SF,BRC,2,06:05,ADI,2,08:30,145,1,100 km,S......,,IRI-BRC-to-ADI.pdf
+19310,Shanti Exp,Exp,CYI,1,06:12,ADI,1,08:20,128,3,96 km,SMTWTFS,,IRI-BRC-to-ADI.pdf
+14808,Dadar Western - Jodhpur Exp,Exp,BRC,6,06:12,ADI,1,08:30,138,0,100 km,.M.W..S,,IRI-BRC-to-ADI.pdf
+59549,Sankalp Fast Passenger,Pass,BRC,4,06:30,VTA,,08:30,120,5,92 km,SFSMTWT,,IRI-BRC-to-ADI.pdf
+12946,Banaras - Veraval SF Exp,SF,CYI,1,06:35,ADI,1,09:00,145,2,96 km,SF...W.,,IRI-BRC-to-ADI.pdf
+12938,Garba SF Exp,SF,CYI,1,06:45,ADI,3,08:55,130,0,96 km,M.MM...,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+69101,Vadodara - Vatva MEMU,MEMU,BRC,2,07:00,VTA,,09:35,155,16,92 km,SMTWTFS,,IRI-BRC-to-ADI.pdf
+19576,Nathdwara Road- Okha Weekly Exp,Exp,CYI,1,07:15,ADI,1,09:25,130,2,96 km,....T..,"3A, 2A, 1A, 3E",IRI-BRC-to-ADI.pdf
+26903,Surat - Udaipur City Vande Bharat Exp,VB,BRC,3,07:40,ASV,2,09:25,105,2,103 km,SFSM.WT,"CC, Ex",IRI-BRC-to-ADI.pdf
+20823,Puri - Ajmer SF Exp,SF,BRC,,07:47,ADI,1,09:25,98,0,100 km,SF.M..T,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+22940,Bilaspur - Okha SF Exp,SF,BRC,3,07:47,ADI,2,09:25,98,2,100 km,.M.....,"3A, 2A, 1A, 3E",IRI-BRC-to-ADI.pdf
+19033,Gujarat Queen,Exp,BRC,3,08:15,ADI,4,10:35,140,6,100 km,SFSMTWT,,IRI-BRC-to-ADI.pdf
+20959,Valsad - Vadnagar Intercity SF Exp,SF,BRC,6,08:32,ADI,1,10:10,98,2,100 km,SFSMTWT,,IRI-BRC-to-ADI.pdf
+12834,Howrah - Ahmedabad SF Exp,SF,BRC,3,09:39,ADI,5,12:15,156,3,100 km,SMTWTFS,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+19436,Asansol - Ahmedabad Weekly Exp,Exp,BRC,6,09:48,ADI,,12:00,132,2,100 km,......S,,IRI-BRC-to-ADI.pdf
+19484,Saharsa - Ahmedabad Exp,Exp,BRC,4,09:48,ADI,,12:00,132,2,100 km,SFSMTWT,,IRI-BRC-to-ADI.pdf
+12476,Shri Mata Vaishno Devi Katra - Hapa SF Exp,SF,CYI,1,10:18,ADI,5,12:05,107,2,96 km,SF.M...,"3A, 2A, 1A, 3E",IRI-BRC-to-ADI.pdf
+12478,Shri Mata Vaishno Devi Katra - Jamnagar SF Ex,SF,CYI,1,10:18,ADI,3,12:05,107,2,96 km,SFS....,"3A, 2A, 1A, 3E",IRI-BRC-to-ADI.pdf
+12474,Sarvodaya SF Exp,SF,CYI,1,10:18,ADI,2,12:05,107,2,96 km,....T..,"3A, 2A, 1A, 3E",IRI-BRC-to-ADI.pdf
+20901,Mumbai Ctrl - Gandhinagar Capital Vande Bhara,VB,BRC,2,10:26,ADI,1,11:35,69,1,100 km,MSMMT.T,"CC, Ex",IRI-BRC-to-ADI.pdf
+69115,Vadodara - Vatva MEMU,MEMU,BRC,5,10:45,VTA,4,13:35,170,16,92 km,SSMTWTF,,IRI-BRC-to-ADI.pdf
+12009,Mumbai Ctrl - Ahmedabad Shatabdi Exp,Shtb,BRC,2,10:59,ADI,1,12:40,101,2,100 km,.MTWTFS,"Ex, EA, EV",IRI-BRC-to-ADI.pdf
+15636,Guwahati - Okha Dwarka Exp,Exp,CYI,1,11:21,ADI,5,13:40,139,1,96 km,.M.....,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+15668,Kamakhya - Gandhidham Exp,Exp,CYI,1,11:21,ADI,3,13:40,139,0,96 km,SF...W.,,IRI-BRC-to-ADI.pdf
+12755,Kakinada Port - Bhavnagar Trm SF Exp,SF,BRC,4,11:37,ADI,3,13:25,108,1,100 km,....T..,"3A, 2A, 1A, 3E",IRI-BRC-to-ADI.pdf
+16614,Coimbatore - Rajkot Exp,Exp,BRC,,11:37,ADI,3,13:25,108,3,100 km,SF.....,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+22718,Secunderabad - Rajkot SF Exp,SF,BRC,3,11:37,ADI,3,13:25,108,3,100 km,SF.MT..,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+20967,Secunderabad - Porbandar Weekly SF Exp,SF,BRC,2,11:37,ADI,2,13:15,98,2,100 km,SF...W.,,IRI-BRC-to-ADI.pdf
+22585,Banaras - Gandhinagar Capital SF Exp,SF,CYI,1,12:11,ADI,1,14:10,119,1,96 km,SF...W.,"3A, 2A, 1A, 3E",IRI-BRC-to-ADI.pdf
+22953,Gujarat SF Exp,SF,BRC,2,12:25,ADI,3,14:30,125,5,100 km,SMTWTFS,,IRI-BRC-to-ADI.pdf
+15045,Gorakhpur - Okha Exp,Exp,CYI,1,14:10,ADI,3,17:35,205,2,96 km,....T..,,IRI-BRC-to-ADI.pdf
+19422,Patna - Ahmedabad Weekly Exp,Exp,CYI,1,14:10,ADI,2,17:45,215,2,96 km,..T....,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+19526,Naharlagun - Hapa Weekly Exp,Exp,CYI,,14:20,ADI,,17:45,205,2,96 km,......S,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+09466,Darbhanga - Ahmedabad Spl Fare Spl,Exp,CYI,1,14:55,ADI,,16:35,100,0,96 km,SF.M...,,IRI-BRC-to-ADI.pdf
+12656,Navjeevan SF Exp,SF,BRC,6,15:32,ADI,6,18:00,148,3,100 km,SFSMTWT,,IRI-BRC-to-ADI.pdf
+22938,Rewa - Rajkot SF Exp,SF,BRC,2,15:48,ADI,4,17:35,107,2,100 km,SF.M...,"3A, 2A, 1A, 3E",IRI-BRC-to-ADI.pdf
+22959,Vadodara - Jamnagar Intercity Exp,SF,BRC,3,15:50,ADI,1,17:30,100,2,100 km,SMTWTFS,,IRI-BRC-to-ADI.pdf
+09207,Bandra Trm - Bhavnagar Trm Spl Fare Spl,Exp,BRC,4,15:58,ADI,,18:10,132,1,100 km,.....F.,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+19567,Tuticorin - Okha Vivek Exp,Exp,BRC,2,16:01,ADI,3,18:10,129,2,100 km,SFS....,"SL, 2A, 3E",IRI-BRC-to-ADI.pdf
+22968,Prayagraj - Ahmedabad Weekly SF Exp,SF,BRC,6,16:01,ADI,1,18:10,129,2,100 km,.....F.,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+14805,Yesvantpur - Barmer AC Exp,ACExp,BRC,2,16:25,ADI,7,18:10,105,1,100 km,.M.....,,IRI-BRC-to-ADI.pdf
+22498,Tiruchchirappalli - Shri Ganganagar Humsafar,Hms,BRC,5,16:25,ADI,3,18:10,105,2,100 km,.....F.,,IRI-BRC-to-ADI.pdf
+04828,Bandra Termnius - Bhagat ki Kothi Spl Fare Sp,Exp,BRC,,16:30,SBIB,,18:30,120,0,106 km,S......,,IRI-BRC-to-ADI.pdf
+12216,Bandra Trm - Delhi Sarai Rohilla Garib Rath E,GR,BRC,2,17:00,ADI,3,18:50,110,2,100 km,SFS.TW.,,IRI-BRC-to-ADI.pdf
+22451,Bandra Trm - Chandigarh SF Exp,SF,BRC,2,17:00,ADI,3,18:50,110,1,100 km,.M..T..,"3A, 2A, 1A, 3E",IRI-BRC-to-ADI.pdf
+19027,Bandra Trm - Jammu Tawi Vivek Exp,Exp,BRC,2,17:00,ADI,1,18:50,110,2,100 km,SF.....,"3A, 2A, 1A, 3E",IRI-BRC-to-ADI.pdf
+22915,Bandra Trm - Hisar SF Exp,SF,BRC,6,17:21,ADI,1,19:15,114,2,100 km,SF.M...,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+22931,Bandra Trm - Jaisalmer SF Exp,SF,BRC,6,17:21,ADI,1,19:15,114,2,100 km,.....F.,,IRI-BRC-to-ADI.pdf
+19015,Saurashtra Exp,Exp,BRC,4,17:58,ADI,2,20:10,132,7,100 km,SMTWTFS,,IRI-BRC-to-ADI.pdf
+16587,Yesvantpur - Bikaner Exp,Exp,BRC,3,18:14,ADI,1,19:55,101,2,100 km,SFS....,,IRI-BRC-to-ADI.pdf
+12965,Bandra Trm - Bhuj Weekly SF Exp,SF,BRC,3,18:14,ADI,7,19:55,101,2,100 km,..T....,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+19035,Vadodara - Vatva InterCity Exp,Exp,BRC,6,18:15,VTA,,20:35,140,7,92 km,SFSMTWT,,IRI-BRC-to-ADI.pdf
+12480,Suryanagari SF Exp,SF,BRC,4,18:21,ADI,1,20:25,124,0,100 km,SMTWTFS,"3A, 2A, 1A, 3E",IRI-BRC-to-ADI.pdf
+22919,MGR Chennai Ctrl - Ahmedabad Humsafar Exp,Hms,BRC,,18:30,ADI,8,21:15,165,1,100 km,...W...,,IRI-BRC-to-ADI.pdf
+19420,Tiruchchirappalli - Ahmedabad Weekly Exp,Exp,BRC,,18:35,ADI,,21:15,160,0,100 km,SFS....,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+12933,Karnavati Exp,SF,BRC,3,18:55,VTA,,20:50,115,2,92 km,SMTWTFS,,IRI-BRC-to-ADI.pdf
+14708,Ranakpur Exp,Exp,BRC,6,19:07,ADI,1,21:45,158,2,100 km,SMTWTFS,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+12931,Mumbai Ctrl - Ahmedabad AC Double Decker Exp,DD,BRC,2,19:33,ADI,4,21:40,127,2,100 km,.SFMTWT,,IRI-BRC-to-ADI.pdf
+22476,Coimbatore - Hisar AC SF Exp,ACSF,BRC,5,19:38,ADI,4,21:25,107,1,100 km,SF.....,,IRI-BRC-to-ADI.pdf
+22474,Bandra Trm - Bikaner SF Exp,SF,BRC,5,19:47,ADI,1,21:35,108,2,100 km,SF..T..,,IRI-BRC-to-ADI.pdf
+22949,Bandra Trm - Delhi Sarai Rohilla SF Exp,SF,BRC,6,19:47,ADI,3,21:35,108,2,100 km,...W...,"3A, 2A, 1A, 3E",IRI-BRC-to-ADI.pdf
+20923,Tirunelveli - Gandhidham Humsafar Exp,Hms,BRC,3,19:47,ADI,1,21:35,108,0,100 km,M.M...T,"SL, 3A",IRI-BRC-to-ADI.pdf
+69113,Vadodara - Vatva MEMU,MEMU,BRC,6,19:50,VTA,,22:55,185,16,92 km,SFSMTWT,,IRI-BRC-to-ADI.pdf
+22970,Banaras - Okha SF Exp,SF,CYI,1,20:01,ADI,1,22:35,154,1,96 km,......S,"3A, 2A, 1A, 3E",IRI-BRC-to-ADI.pdf
+22961,Mumbai Ctrl - Ahmedabad Vande Bharat Exp,VB,BRC,2,20:10,ADI,2,21:15,65,0,100 km,.MTWTFS,"CC, Ex",IRI-BRC-to-ADI.pdf
+19217,Saurashtra Janta Exp,Exp,BRC,3,20:17,ADI,3,22:10,113,4,100 km,SFSMTWT,,IRI-BRC-to-ADI.pdf
+20909,Thiruvananthapuram North - Porbandar Weekly S,SF,BRC,3,20:44,ADI,1,22:35,111,1,100 km,S......,"SL, 3A, 2A",IRI-BRC-to-ADI.pdf
+20946,Hazrat Nizamuddin - Ekta Nagar Gujarat Sampar,SKr,BRC,1,05:25,EKNR,1,06:55,90,0,82 km,SFS....,"3A, 2A, 1A, 3E",IRI-BRC-to-EKNR.pdf
+12927,Dadar Western - Ekta Nagar SF Exp,SF,BRC,5,05:50,EKNR,1,07:30,100,0,82 km,MSMMTTW,"3A, 2A, 1A, 3E",IRI-BRC-to-EKNR.pdf
+69201,Pratapnagar - Ekta Nagar MEMU,MEMU,PRTN,2,06:40,EKNR,3,08:05,85,2,77 km,SFSMTWT,,IRI-BRC-to-EKNR.pdf
+20904,Varanasi - Ekta Nagar Mahamana Exp,SF,BRC,6,07:20,EKNR,1,09:00,100,0,82 km,SF....T,,IRI-BRC-to-EKNR.pdf
+09409,Ahmedabad - Ekta Nagar Steam Heritage Spl,SF,BRC,,08:23,EKNR,2,10:00,97,0,82 km,SS.....,,IRI-BRC-to-EKNR.pdf
+20947,Ahmedabad - Ekta Nagar Jan Shatabdi Exp,JShtb,BRC,1,09:18,EKNR,1,10:50,92,0,82 km,MSMMTTW,"CC, Ex, EV",IRI-BRC-to-EKNR.pdf
+69203,Pratapnagar - Ekta Nagar MEMU,MEMU,PRTN,2,12:15,EKNR,3,13:40,85,2,77 km,MSMMTTW,,IRI-BRC-to-EKNR.pdf
+69205,Pratapnagar - Ekta Nagar MEMU,MEMU,PRTN,2,15:45,EKNR,3,17:10,85,2,77 km,SFSMTWT,,IRI-BRC-to-EKNR.pdf
+20906,Rewa - Ekta Nagar Mahamana Exp,SF,BRC,4,15:58,EKNR,2,17:40,102,0,82 km,SF.....,,IRI-BRC-to-EKNR.pdf
+20919,MGR Chennai Ctrl - Ekta Nagar Weekly SF Exp,SF,BRC,6,18:45,EKNR,2,21:05,140,0,82 km,.....F.,,IRI-BRC-to-EKNR.pdf
+14701,Amrapur Aravali Exp,Exp,BRC,1,00:06,BDTS,3,06:15,369,7,382 km,SMTWTFS,,IRI-BRC-to-MMCT.pdf
+05037,Barhni - Bandra Trm Spl,Exp,BRC,,00:10,BDTS,,06:30,380,4,382 km,.SF...T,,IRI-BRC-to-MMCT.pdf
+21904,Bikaner - Bandra Trm AC SF Exp,ACSF,BRC,1,00:14,BDTS,,06:45,391,4,382 km,SF...W.,"CC, 3E",IRI-BRC-to-MMCT.pdf
+22934,Jaipur - Bandra Trm Weekly SF Exp,SF,BRC,2,00:17,BDTS,1,06:30,373,4,382 km,SF..T..,,IRI-BRC-to-MMCT.pdf
+12902,Gujarat Mail,SF,BRC,1,00:25,DDR,5,06:15,350,6,387 km,SFSMTWT,"3A, 2A, 1A, 3E",IRI-BRC-to-MMCT.pdf
+12962,Avantika SF Exp,SF,BRC,1,00:38,MMCT,5,06:40,362,6,393 km,SMTWTFS,"3A, 2A, 1A, 3E",IRI-BRC-to-MMCT.pdf
+14707,Ranakpur Exp,Exp,BRC,1,00:45,DDR,6,07:10,385,7,387 km,SSFMTWT,"SL, 3A, 2A",IRI-BRC-to-MMCT.pdf
+09080,Indore - Mumbai Ctrl Spl Fare AC SF Spl,ACSF,BRC,,00:47,MMCT,,07:10,383,3,393 km,.SFM.W.,,IRI-BRC-to-MMCT.pdf
+09088,Ahmedabad - Mumbai Ctrl Spl Fare AC SF Spl,ACSF,BRC,,00:47,MMCT,,07:10,383,3,393 km,.SF...T,,IRI-BRC-to-MMCT.pdf
+09086,Indore - Mumbai Ctrl Spl Fare AC Superfast Sp,ACSF,BRC,,00:47,MMCT,,07:10,383,3,393 km,SF..T..,,IRI-BRC-to-MMCT.pdf
+12956,Jaipur - Mumbai Ctrl SF Exp,SF,BRC,1,01:06,MMCT,,06:55,349,4,393 km,SFSMTWT,,IRI-BRC-to-MMCT.pdf
+22964,Bhavnagar Trm - Bandra Trm Weekly SF Exp,SF,BRC,1,01:11,BDTS,2,07:25,374,6,382 km,S......,"SL, 3A, 2A",IRI-BRC-to-MMCT.pdf
+04827,Bhagat Ki Kothi - Bandra Trm Spl Fare Spl,Exp,BRC,,01:20,BDTS,,07:25,365,4,382 km,SF.....,,IRI-BRC-to-MMCT.pdf
+12484,Amritsar - Thiruvananthapuram North Weekly SF,SF,BRC,1,01:23,PNVL,7,07:27,364,2,411 km,SFS....,,IRI-BRC-to-MMCT.pdf
+22660,Yog Nagari Rishikesh - Thiruvananthapuram Nor,SF,BRC,1,01:23,PNVL,7,07:27,364,3,411 km,S.M....,,IRI-BRC-to-MMCT.pdf
+12218,Kerala Sampark Kranti Exp,SKr,BRC,1,01:23,PNVL,7,07:27,364,2,411 km,SF...W.,"3A, 2A, 1A, 3E",IRI-BRC-to-MMCT.pdf
+12972,Bhavnagar Trm - Bandra Trm SF Exp,SF,BRC,1,01:37,BDTS,3,08:20,403,6,382 km,SFSMTWT,,IRI-BRC-to-MMCT.pdf
+05183,Azamgarh - Bandra Trm Spl Fare SF Spl,SF,BRC,,01:55,BDTS,6,08:10,375,2,382 km,SF.....,,IRI-BRC-to-MMCT.pdf
+09012,Bhuj - Bandra Trm Spl Fare SF Spl,SF,BRC,,02:03,BDTS,,08:45,402,3,382 km,SF...W.,,IRI-BRC-to-MMCT.pdf
+09038,Bhuj - Bandra Trm Spl Fare SF Spl,SF,BRC,,02:03,BDTS,,08:30,387,4,382 km,S....F.,"SL, 3A",IRI-BRC-to-MMCT.pdf
+12215,Delhi Sarai Rohilla - Bandra Trm Garib Rath E,GR,BRC,1,02:22,BDTS,4,07:35,313,3,382 km,SF.MT.T,,IRI-BRC-to-MMCT.pdf
+22452,Chandigarh - Bandra Trm SF Exp,SF,BRC,1,02:22,BDTS,4,07:35,313,3,382 km,S..W...,"3A, 2A, 1A, 3E",IRI-BRC-to-MMCT.pdf
+20944,Bhagat Ki Kothi - Bandra Trm Humsafar Exp,Hms,BRC,1,02:22,BDTS,3,07:35,313,3,382 km,.....F.,,IRI-BRC-to-MMCT.pdf
+19418,Ahmedabad - Borivali Exp,Exp,BRC,1,02:50,BVI,6,14:05,675,44,363 km,SMTWTFS,"II, SL",IRI-BRC-to-MMCT.pdf
+19092,Gorakhpur - Bandra Trm Humsafar Exp,Hms,BRC,1,03:07,BDTS,6,08:30,323,3,382 km,..T....,"SL, 3A",IRI-BRC-to-MMCT.pdf
+12228,Indore - Mumbai Ctrl Duronto Exp,Drnt,BRC,1,03:08,MMCT,2,08:20,312,0,393 km,S....F.,,IRI-BRC-to-MMCT.pdf
+12240,Hisar - Mumbai Ctrl Duronto Exp,Drnt,BRC,1,03:08,MMCT,2,08:20,312,0,393 km,SF..T.T,,IRI-BRC-to-MMCT.pdf
+22544,Lal Kuan - Bandra Trm Weekly SF Exp,SF,BRC,1,03:08,BDTS,5,08:30,322,3,382 km,SF.M...,,IRI-BRC-to-MMCT.pdf
+22936,Palitana - Bandra Trm Weekly SF Exp,SF,BRC,1,03:33,BDTS,1,09:30,357,3,382 km,...W...,,IRI-BRC-to-MMCT.pdf
+22924,Jamnagar - Bandra Trm Humsafar Exp,Hms,BRC,1,03:33,BDTS,2,09:30,357,4,382 km,SFS.T..,"SL, 3A",IRI-BRC-to-MMCT.pdf
+22990,Mahuva - Bandra Trm SF Exp,SF,BRC,1,03:33,BDTS,2,09:30,357,3,382 km,....T.S,,IRI-BRC-to-MMCT.pdf
+12952,New Delhi - Mumbai Ctrl Tejas Rajdhani Exp,Raj,BRC,1,03:50,MMCT,2,08:35,285,2,393 km,SMTWTFS,,IRI-BRC-to-MMCT.pdf
+12910,Hazrat Nizamuddin - Bandra Trm Garib Rath Exp,GR,BRC,2,04:05,BDTS,2,09:15,310,2,382 km,SS..W.F,,IRI-BRC-to-MMCT.pdf
+12908,Maharashtra Sampark Kranti Exp,SKr,BRC,2,04:05,BDTS,5,09:15,310,2,382 km,.SFM..T,"3A, 2A, 1A, 3E",IRI-BRC-to-MMCT.pdf
+12248,Hazrat Nizamuddin - Bandra Trm Yuva Exp,ACSF,BRC,2,04:05,BDTS,,09:15,310,1,382 km,......S,"CC, 3E",IRI-BRC-to-MMCT.pdf
+12954,August Kranti Tejas Rajdhani Exp,Raj,BRC,1,04:39,MMCT,1,10:05,326,5,393 km,SFSMTWT,,IRI-BRC-to-MMCT.pdf
+22956,Kutch SF Exp,SF,BRC,2,04:42,BDTS,7,11:30,408,8,382 km,SFSMTWT,,IRI-BRC-to-MMCT.pdf
+22908,Hapa - Madgaon Weekly SF Exp,SF,BRC,1,05:01,PNVL,7,11:17,376,4,411 km,SF...W.,,IRI-BRC-to-MMCT.pdf
+20910,Porbandar - Thiruvananthapuram North Weekly S,SF,BRC,1,05:01,PNVL,7,11:17,376,4,411 km,....T..,"SL, 3A, 2A",IRI-BRC-to-MMCT.pdf
+19578,Jamnagar - Tirunelveli Exp,Exp,BRC,1,05:01,PNVL,7,11:17,376,5,411 km,SF.....,,IRI-BRC-to-MMCT.pdf
+20932,Indore - Thiruvananthapuram North Weekly SF E,SF,BRC,1,05:06,PNVL,7,11:17,371,4,411 km,SF..T..,,IRI-BRC-to-MMCT.pdf
+22966,Bhagat Ki Kothi - Bandra Trm SF Exp,SF,BRC,1,05:15,BDTS,6,11:20,365,3,382 km,SF.....,"3A, 2A, 1A, 3E",IRI-BRC-to-MMCT.pdf
+12960,Bhuj - Bandra Trm Weekly SF Exp,SF,BRC,1,05:15,BDTS,7,11:20,365,2,382 km,SF.M...,"SL, 3A, 2A",IRI-BRC-to-MMCT.pdf
+12966,Bhuj - Bandra Trm Weekly SF Exp,SF,BRC,1,05:15,BDTS,2,11:20,365,2,382 km,SF.....,"SL, 3A, 2A",IRI-BRC-to-MMCT.pdf
+20995,Ajmer - Bandra Trm Weekly SF Exp,SF,BRC,,05:25,BDTS,1,12:15,410,7,382 km,SF.....,"SL, 3A, 2A",IRI-BRC-to-MMCT.pdf
+12479,Suryanagari SF Exp,SF,BRC,2,05:28,BDTS,5,11:45,377,3,382 km,SMTWTFS,"3A, 2A, 1A, 3E",IRI-BRC-to-MMCT.pdf
+22473,Bikaner - Bandra Trm SF Exp,SF,BRC,1,05:53,BDTS,1,12:00,367,5,382 km,SF.M...,,IRI-BRC-to-MMCT.pdf
+22952,Gandhidham - Bandra Trm Weekly SF Exp,SF,BRC,1,05:53,BDTS,1,12:00,367,4,382 km,SF....T,"SL, 3A, 2A",IRI-BRC-to-MMCT.pdf
+12934,Karnavati Exp,SF,BRC,1,06:28,BDTS,2,12:30,362,6,382 km,SFSMTWT,,IRI-BRC-to-MMCT.pdf
+12990,Ajmer - Dadar Western SF Exp,SF,BRC,1,06:40,DDR,6,12:50,370,5,387 km,SFS..W.,,IRI-BRC-to-MMCT.pdf
+12489,Shri Ganganagar - Dadar Western SF Exp,SF,BRC,1,06:40,DDR,6,12:50,370,4,387 km,SF..T..,,IRI-BRC-to-MMCT.pdf
+20483,Bhagat ki Kothi - Dadar Western SF Exp,SF,BRC,1,06:40,DDR,,12:50,370,5,387 km,.M..T..,,IRI-BRC-to-MMCT.pdf
+22962,Ahmedabad - Mumbai Ctrl Vande Bharat Exp,VB,BRC,1,06:58,MMCT,4,11:45,287,3,393 km,SF.MTWT,"CC, Ex",IRI-BRC-to-MMCT.pdf
+12980,Jaipur - Bandra Trm SF Exp,SF,BRC,2,07:10,BDTS,2,13:15,365,7,382 km,SF.M.W.,"3A, 2A, 1A, 3E",IRI-BRC-to-MMCT.pdf
+20991,Ajmer - Daund Weekly SF Exp,SF,BRC,1,07:10,PNVL,7,14:10,420,6,411 km,....T..,"SL, 3A, 2A",IRI-BRC-to-MMCT.pdf
+12932,Ahmedabad - Mumbai Ctrl AC Double Decker Exp,DD,BRC,1,07:13,MMCT,5,13:05,352,6,393 km,SF.MTWT,,IRI-BRC-to-MMCT.pdf
+20908,Sayaji Nagari Superfast Exp,SF,BRC,1,07:25,DDR,7,13:55,390,13,387 km,SFSMTWT,,IRI-BRC-to-MMCT.pdf
+22194,Gwalior - Daund Weekly SF Exp,SF,BRC,2,07:35,PNVL,7,14:10,395,6,411 km,SF.....,,IRI-BRC-to-MMCT.pdf
+22902,Udaipur City - Bandra Trm SF Exp,SF,BRC,2,07:35,BDTS,4,13:35,360,3,382 km,S..W.F.,"3A, 2A, 1A, 3E",IRI-BRC-to-MMCT.pdf
+19667,Palace Queen Humsafar Exp,Hms,BRC,1,07:35,BSR,6,12:55,320,1,346 km,T.M....,"SL, 3A",IRI-BRC-to-MMCT.pdf
+82902,Ahmedabad - Mumbai Ctrl IRCTC Tejas Exp,Tjs,BRC,1,07:49,MMCT,4,13:20,331,4,393 km,SFSMTW.,"CC, Ex",IRI-BRC-to-MMCT.pdf
+12996,Ajmer - Bandra Trm SF Exp,SF,BRC,1,07:50,BDTS,5,14:15,385,6,382 km,..T.T.S,,IRI-BRC-to-MMCT.pdf
+16282,Ajmer - Mysuru Exp,Exp,BRC,2,07:50,BSR,7,13:15,325,1,346 km,SF.M...,,IRI-BRC-to-MMCT.pdf
+20164,Jabalpur - Bandra Trm Weekly Superfast Exp,SF,BRC,2,07:50,BDTS,3,14:15,385,3,382 km,SF.....,,IRI-BRC-to-MMCT.pdf
+20495,Jodhpur - Hadapsar SF Exp,SF,BRC,1,08:00,BSR,7,12:17,257,2,346 km,SMTWTFS,,IRI-BRC-to-MMCT.pdf
+22922,Gorakhpur - Bandra Trm Antyodaya Exp,Ant,BRC,1,08:16,BDTS,1,15:15,419,4,382 km,SF..T..,,IRI-BRC-to-MMCT.pdf
+12926,Paschim SF Exp,SF,BRC,1,08:27,BDTS,2,14:40,373,7,382 km,SFSMTWT,,IRI-BRC-to-MMCT.pdf
+22954,Gujarat SF Exp,SF,BRC,1,08:44,MMCT,,16:04,440,19,393 km,SMTWTFS,,IRI-BRC-to-MMCT.pdf
+14711,Bikaner - Bandra Trm Exp,Exp,BRC,1,08:55,BDTS,,15:50,415,5,382 km,...W...,"SL, 3A, 2A",IRI-BRC-to-MMCT.pdf
+15085,Gorakhpur - Bandra Trm Amrit Bharat Exp,AB,BRC,,08:55,BDTS,,17:45,530,5,382 km,.....F.,"II, SL",IRI-BRC-to-MMCT.pdf
+09006,Bhiwani - Bandra Trm Spl Fare SF Spl,SF,BRC,1,09:00,BDTS,,16:10,430,4,382 km,....T..,,IRI-BRC-to-MMCT.pdf
+06014,Madar - Thiruvananthapuram Ctrl Spl Fare AC F,ACExp,BRC,,09:00,PNVL,,17:50,530,3,411 km,......S,,IRI-BRC-to-MMCT.pdf
+09024,Dholpur - Bandra Trm Spl Fare Puja Spl,Exp,BRC,,09:00,BDTS,,16:10,430,4,382 km,SF....T,,IRI-BRC-to-MMCT.pdf
+19028,Jammu Tawi - Bandra Trm Vivek Exp,SF,BRC,1,09:03,BDTS,5,15:00,357,3,382 km,.M.....,"3A, 2A, 1A, 3E",IRI-BRC-to-MMCT.pdf
+14806,Barmer - Yesvantpur AC Exp,ACExp,BRC,3,09:03,BSR,7,13:45,282,3,346 km,....T..,,IRI-BRC-to-MMCT.pdf
+16588,Bikaner - Yesvantpur Exp,Exp,BRC,2,09:03,BSR,6,13:45,282,4,346 km,S.T....,"SL, 3A, 2A",IRI-BRC-to-MMCT.pdf
+21902,Barmer - Bandra Trm Humsafar SF Exp,Hms,BRC,1,09:03,BDTS,4,15:00,357,5,382 km,......S,"SL, 3A",IRI-BRC-to-MMCT.pdf
+16311,Shri Ganganagar - Thiruvananthapuram North Ex,Exp,BRC,1,09:32,PNVL,7,15:22,350,5,411 km,..T....,,IRI-BRC-to-MMCT.pdf
+12284,Hazrat Nizamuddin - Ernakulam Jn Duronto Exp,Drnt,BRC,2,09:32,PNVL,7,15:22,350,2,411 km,SF.....,,IRI-BRC-to-MMCT.pdf
+22950,Delhi Sarai Rohilla - Bandra Trm SF Exp,SF,BRC,2,09:32,BDTS,1,15:10,338,4,382 km,.SF...T,"3A, 2A, 1A, 3E",IRI-BRC-to-MMCT.pdf
+22475,Hisar - Coimbatore AC SF Exp,ACSF,BRC,1,09:32,PNVL,7,15:22,350,4,411 km,SF...W.,,IRI-BRC-to-MMCT.pdf
+12494,Darshan SF Exp,SF,BRC,1,09:32,BSR,7,14:05,273,2,346 km,.....F.,,IRI-BRC-to-MMCT.pdf
+22497,Shri Ganganagar - Tiruchchirappalli Humsafar,Hms,BRC,2,09:32,BSR,7,14:05,273,2,346 km,SF.M...,,IRI-BRC-to-MMCT.pdf
+22932,Jaisalmer - Bandra Trm SF Exp,SF,BRC,2,09:38,BDTS,1,15:50,372,5,382 km,......S,,IRI-BRC-to-MMCT.pdf
+19204,Veraval - Bandra Trm Exp,Exp,BRC,3,09:38,BDTS,4,15:50,372,4,382 km,SF.....,,IRI-BRC-to-MMCT.pdf
+22916,Hisar - Bandra Trm SF Exp,SF,BRC,4,09:56,BDTS,1,15:50,354,4,382 km,..T....,"SL, 3A, 2A",IRI-BRC-to-MMCT.pdf
+12998,Barmer - Bandra Trm Humsafar Exp,Hms,BRC,1,09:56,BDTS,4,15:50,354,5,382 km,....T..,"SL, 3A",IRI-BRC-to-MMCT.pdf
+19016,Saurashtra Exp,Exp,BRC,3,10:01,DDR,6,19:20,559,31,387 km,SFSMTWT,,IRI-BRC-to-MMCT.pdf
+22195,Virangana Lakshmibai Jhansi - Bandra Trm SF E,SF,BRC,,10:15,BDTS,7,16:10,355,4,382 km,SFSM...,,IRI-BRC-to-MMCT.pdf
+02199,VGL Jhansi - Bandra Trm Spl Fare SF Spl,SF,BRC,,10:20,BDTS,7,16:10,350,4,382 km,SF....T,,IRI-BRC-to-MMCT.pdf
+09002,Bhiwani - Mumbai Ctrl Spl Fare SF Spl,SF,BRC,1,10:20,MMCT,,16:30,370,6,393 km,...W..S,,IRI-BRC-to-MMCT.pdf
+09008,Dholpur - Mumbai Ctrl Spl Fare Puja Spl,Exp,BRC,,10:20,MMCT,,16:30,370,6,393 km,SF...W.,,IRI-BRC-to-MMCT.pdf
+12472,Swaraj Exp,SF,BRC,1,10:35,BDTS,2,16:10,335,5,382 km,..TW.FS,"3A, 2A, 1A, 3E",IRI-BRC-to-MMCT.pdf
+22210,Hazrat Nizamuddin - Mumbai Ctrl Duronto Exp,Drnt,BRC,1,10:43,MMCT,1,15:50,307,0,393 km,..T...S,,IRI-BRC-to-MMCT.pdf
+20924,Gandhidham - Tirunelveli Humsafar Exp,Hms,BRC,1,10:45,PNVL,,16:47,362,2,411 km,.M.....,"SL, 3A",IRI-BRC-to-MMCT.pdf
+19419,Ahmedabad - Tiruchchirappalli Weekly Exp,Exp,BRC,1,10:45,BSR,,15:35,290,3,346 km,SF....T,"SL, 3A, 2A",IRI-BRC-to-MMCT.pdf
+20920,Ekta Nagar - M G R Chennai Ctrl Weekly SF Exp,SF,BRC,,10:50,BSR,7,15:35,285,3,346 km,SF...W.,,IRI-BRC-to-MMCT.pdf
+22918,Haridwar - Bandra Trm SF Exp,SF,BRC,2,10:57,BDTS,6,17:00,363,7,382 km,SF....T,"3A, 2A, 1A, 3E",IRI-BRC-to-MMCT.pdf
+22634,Hazrat Nizamuddin - Thiruvananthapuram Ctrl S,SF,BRC,1,10:57,PNVL,6,16:47,350,2,411 km,SF.....,,IRI-BRC-to-MMCT.pdf
+20668,Khatipura - Yesvantpur Superfast Exp,SF,BRC,1,10:57,BSR,7,15:35,278,1,346 km,SF.....,"SL, 3A, 2A",IRI-BRC-to-MMCT.pdf
+20954,Ahmedabad - MGR Chennai Ctrl SF Exp,SF,BRC,1,11:13,BSR,7,15:45,272,3,346 km,......S,,IRI-BRC-to-MMCT.pdf
+22920,Ahmedabad - MGR Chennai Ctrl Humsafar Exp,Hms,BRC,2,11:13,BSR,7,15:45,272,2,346 km,SF.M...,,IRI-BRC-to-MMCT.pdf
+12756,Bhavnagar Trm - Kakinada Port Superfast Exp,SF,BRC,1,11:28,BSR,7,16:35,307,2,346 km,......S,"3A, 2A, 1A, 3E",IRI-BRC-to-MMCT.pdf
+16613,Rajkot - Coimbatore Exp,Exp,BRC,,11:31,BSR,7,16:35,304,3,346 km,SFS....,"SL, 3A, 2A",IRI-BRC-to-MMCT.pdf
+22717,Rajkot - Secunderabad SF Exp,SF,BRC,2,11:31,BSR,6,16:35,304,5,346 km,SF.M.WT,"SL, 3A, 2A",IRI-BRC-to-MMCT.pdf
+20968,Porbandar - Secunderabad Weekly SF Exp,SF,BRC,1,11:31,BSR,7,16:35,304,5,346 km,..T....,,IRI-BRC-to-MMCT.pdf
+19568,Okha - Tuticorin Vivek Exp,Exp,BRC,2,11:31,BSR,6,16:35,304,4,346 km,.SF....,,IRI-BRC-to-MMCT.pdf
+01484,Hazrat Nizamuddin - Khadki Spl Fare AC SF Fes,ACSF,BRC,,11:38,BSR,7,17:15,337,4,346 km,...W..S,"3A, 2A",IRI-BRC-to-MMCT.pdf
+09190,Katihar - Mumbai Ctrl Spl Fare Spl,Exp,BRC,,11:38,MMCT,,18:40,422,4,393 km,SF..T..,"SL, 3A, 2A",IRI-BRC-to-MMCT.pdf
+04175,Subedarganj - Dadar Western Spl Fare Spl,SF,CYI,,13:35,DDR,,22:40,545,3,395 km,SFS....,"SL, 3A, 2A",IRI-BRC-to-MMCT.pdf
+22976,Ramnagar - Bandra Trm SF Exp,SF,BRC,1,14:30,BDTS,2,20:55,385,4,382 km,SF.....,"SL, 3A, 2A",IRI-BRC-to-MMCT.pdf
+22443,Kanpur Ctrl - Bandra Trm SF Exp,SF,BRC,2,14:30,BDTS,2,20:55,385,4,382 km,SF...W.,,IRI-BRC-to-MMCT.pdf
+20922,Lucknow Jn - Bandra Trm Weekly SF Exp,SF,BRC,1,14:30,BDTS,2,20:55,385,5,382 km,SFS....,"3A, 2A, 1A, 3E",IRI-BRC-to-MMCT.pdf
+21908,Kathgodam - Mumbai Ctrl SF Exp,SF,BRC,,14:30,MMCT,,21:00,390,4,393 km,....T..,"SL, 3A, 2A",IRI-BRC-to-MMCT.pdf
+19020,Haridwar - Bandra Trm Exp,Exp,BRC,2,14:35,BDTS,1,22:30,475,12,382 km,SSFMTWT,"3A, 2A, 1A, 3E",IRI-BRC-to-MMCT.pdf
+04002,Hazrat Nizamuddin - Dadar Western Spl Fare AC,ACSF,BRC,1,14:50,DDR,7,22:40,470,3,387 km,SF..T..,,IRI-BRC-to-MMCT.pdf
+09186,Kanpur Anwarganj - Mumbai Ctrl Spl Fare SF Sp,SF,BRC,,14:50,MMCT,2,22:30,460,3,393 km,.M.....,"SL, 3A, 2A",IRI-BRC-to-MMCT.pdf
+14807,Jodhpur - Dadar Western Exp,Exp,BRC,1,15:30,DDR,7,22:40,430,4,387 km,S.T..F.,,IRI-BRC-to-MMCT.pdf
+12955,Mumbai Ctrl - Jaipur SF Exp,SF,BRC,6,00:18,RTM,6,04:05,227,2,261 km,SFSMTWT,,IRI-BRC-to-RTM.pdf
+22943,Daund - Indore SF Exp,SF,BRC,3,00:30,RTM,5,04:35,245,3,261 km,SMTWTFS,,IRI-BRC-to-RTM.pdf
+19165,Ahmedabad - Darbhanga Sabarmati Exp,Exp,CYI,2,00:57,RTM,,04:50,233,3,253 km,S..W.F.,"3A, 2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+19167,Ahmedabad - Varanasi City Sabarmati Exp,Exp,CYI,2,00:57,RTM,5,04:50,233,3,253 km,S.MT.T.,"3A, 2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+20945,Ekta Nagar - Hazrat Nizamuddin Gujarat Sampar,SKr,BRC,3,01:05,RTM,5,05:00,235,2,261 km,SF....T,"3A, 2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+22969,Okha - Banaras SF Exp,SF,CYI,2,01:15,RTM,5,05:20,245,0,253 km,SF....T,"3A, 2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+12937,Garba SF Exp,SF,CYI,2,01:15,RTM,5,05:20,245,0,253 km,SF.....,"SL, 3A, 2A",IRI-BRC-to-RTM.pdf
+12941,Parasnath Exp,SF,CYI,2,01:15,RTM,5,05:20,245,1,253 km,..T....,"SL, 3A, 2A",IRI-BRC-to-RTM.pdf
+14712,Bandra Trm - Bikaner Exp,Exp,BRC,,01:18,RTM,,05:40,262,1,261 km,S....T.,"SL, 3A, 2A",IRI-BRC-to-RTM.pdf
+12449,Goa Sampark Kranti Exp,SKr,BRC,3,01:30,RTM,5,05:00,210,0,261 km,..TW...,"3A, 2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+05034,Valsad - Gomti Nagar Spl Fare Puja Spl,Exp,BRC,,01:40,RTM,,05:20,220,0,261 km,..T....,"SL, 3A, 2A",IRI-BRC-to-RTM.pdf
+04168,Udhna - Kanpur Ctrl Spl Fare Spl,Exp,BRC,,01:40,RTM,,05:20,220,0,261 km,SF.....,"SL, 3A, 2A",IRI-BRC-to-RTM.pdf
+22586,Gandhinagar Capital - Banaras SF Exp,SF,CYI,2,01:42,RTM,,05:10,208,1,253 km,....T..,"3A, 2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+04106,Udhna - Prayagraj Spl Fare Spl,Exp,CYI,,01:45,RTM,,05:20,215,0,253 km,SF.M...,"SL, 3A, 2A",IRI-BRC-to-RTM.pdf
+12977,Marusagar SF Exp,SF,BRC,3,01:58,RTM,5,05:40,222,0,261 km,SFS....,"3A, 2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+09628,Solapur - Ajmer Spl Fare SF Spl,SF,BRC,,02:03,RTM,,05:55,232,0,261 km,SF....T,"SL, 3A, 2A",IRI-BRC-to-RTM.pdf
+12961,Avantika SF Exp,SF,BRC,2,02:12,RTM,5,05:50,218,5,261 km,SSFMTWT,"3A, 2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+01483,Khadki - Hazrat Nizamuddin Spl Fare AC SF Fes,ACSF,BRC,,02:12,RTM,,06:50,278,0,261 km,SF..T..,"3A, 2A",IRI-BRC-to-RTM.pdf
+12939,Pune - Jaipur SF Exp,SF,BRC,2,03:12,RTM,5,06:45,213,0,261 km,SFS..W.,"3A, 2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+22980,Khadki - Hisar SF Exp,SF,BRC,3,03:12,RTM,5,06:40,208,0,261 km,.M.....,"3A, 2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+15086,Bandra Trm - Gorakhpur Amrit Bharat Exp,AB,BRC,2,03:12,RTM,5,06:45,213,0,261 km,......S,"II, SL",IRI-BRC-to-RTM.pdf
+12227,Mumbai Ctrl - Indore Duronto Exp,Drnt,BRC,2,03:36,RTM,5,07:00,204,0,261 km,....T.S,,IRI-BRC-to-RTM.pdf
+12239,Mumbai Ctrl - Hisar Duronto Exp,Drnt,BRC,2,03:36,RTM,5,07:00,204,0,261 km,S.T....,,IRI-BRC-to-RTM.pdf
+22209,Mumbai Ctrl - Hazrat Nizamuddin Duronto Exp,Drnt,BRC,2,03:36,RTM,5,07:00,204,0,261 km,.M...F.,,IRI-BRC-to-RTM.pdf
+09183,Mumbai Ctrl - Mau Spl Fare AC Spl,ACExp,BRC,,03:36,RTM,5,08:40,304,0,261 km,...W...,"2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+19037,Avadh Exp,Exp,BRC,3,03:57,RTM,5,07:45,228,5,261 km,SMTWTFS,"3A, 2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+12283,Ernakulam Jn - Hazrat Nizamuddin Duronto Exp,Drnt,BRC,4,04:40,RTM,6,08:25,225,0,261 km,SF..T..,,IRI-BRC-to-RTM.pdf
+20941,Bandra Trm - Ghazipur City SF Exp,SF,BRC,4,04:42,RTM,6,08:20,218,0,261 km,SFS....,,IRI-BRC-to-RTM.pdf
+22901,Bandra Trm - Udaipur City SF Exp,SF,BRC,4,04:43,RTM,6,08:25,222,1,261 km,.SF.T.T,"3A, 2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+09079,Mumbai Ctrl - Indore Spl Fare AC SF Spl,ACSF,BRC,,05:20,RTM,,08:45,205,1,261 km,SSF.T..,,IRI-BRC-to-RTM.pdf
+09085,Mumbai Ctrl - Indore Spl Fare AC Superfast Sp,ACSF,BRC,1,05:20,RTM,,08:45,205,1,261 km,.SFM...,,IRI-BRC-to-RTM.pdf
+04001,Dadar Western - Hazrat Nizamuddin Spl Fare AC,ACSF,BRC,2,06:12,RTM,5,09:30,198,0,261 km,....T..,,IRI-BRC-to-RTM.pdf
+04140,Dadar Western - Prayagraj Spl Fare Spl,Exp,BRC,2,06:12,RTM,5,09:30,198,0,261 km,S......,"SL, 3A, 2A",IRI-BRC-to-RTM.pdf
+19019,Bandra Trm - Haridwar Exp,Exp,BRC,3,06:43,RTM,5,11:50,307,19,261 km,SFSMTWT,"3A, 2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+04176,Dadar Western - Subedarganj Spl Fare Spl,SF,CYI,,06:45,RTM,,09:30,165,0,253 km,..T....,"SL, 3A, 2A",IRI-BRC-to-RTM.pdf
+19819,Vadodara - Kota Exp,Exp,BRC,5,07:10,RTM,6,13:45,395,27,261 km,SMTWTFS,,IRI-BRC-to-RTM.pdf
+20438,Udhna - Prayagraj Amrit Bharat Exp,AB,BRC,2,08:50,RTM,5,12:40,230,0,261 km,..T....,"II, SL",IRI-BRC-to-RTM.pdf
+09097,Udhna - Ayodhya Cantt Spl Fare Festival Spl,Exp,BRC,,09:00,RTM,,14:05,305,1,261 km,..T....,"SL, 3A, 2A",IRI-BRC-to-RTM.pdf
+19525,Hapa - Naharlagun Weekly Exp,Exp,CYI,2,09:15,RTM,,12:55,220,1,253 km,SF...W.,"SL, 3A, 2A",IRI-BRC-to-RTM.pdf
+20992,Daund - Ajmer Weekly SF Exp,SF,BRC,3,09:18,RTM,,12:55,217,2,261 km,SF.....,"SL, 3A, 2A",IRI-BRC-to-RTM.pdf
+22193,Daund - Gwalior Weekly SF Exp,SF,BRC,4,09:20,RTM,5,12:55,215,2,261 km,SFS....,,IRI-BRC-to-RTM.pdf
+22653,Thiruvananthapuram Ctrl - Hazrat Nizamuddin S,SF,BRC,4,09:20,RTM,5,12:55,215,0,261 km,SF.....,,IRI-BRC-to-RTM.pdf
+22655,Ernakulam Jn - Hazrat Nizamuddin SF Exp,SF,BRC,4,09:20,RTM,5,12:55,215,0,261 km,SF...W.,,IRI-BRC-to-RTM.pdf
+20961,Udhna - Banaras Weekly SF Exp,SF,BRC,4,09:20,RTM,5,12:55,215,0,261 km,..T....,,IRI-BRC-to-RTM.pdf
+19053,Surat - Muzaffarpur Exp,Exp,BRC,2,09:32,RTM,5,14:05,273,1,261 km,.....F.,,IRI-BRC-to-RTM.pdf
+09065,Surat - Chhapra Spl Fare Spl,Exp,CYI,2,09:32,RTM,,13:35,243,0,253 km,..T....,,IRI-BRC-to-RTM.pdf
+09093,Udhna - Ayodhya Cantt Spl Fare Festival Spl,Exp,BRC,,10:00,RTM,,13:35,215,1,261 km,.....F.,,IRI-BRC-to-RTM.pdf
+15046,Okha - Gorakhpur Exp,Exp,CYI,2,10:15,RTM,,14:05,230,1,253 km,SFS....,,IRI-BRC-to-RTM.pdf
+02200,Bandra Trm - VGL Jhansi Spl Fare SF Spl,SF,BRC,,10:31,RTM,5,14:30,239,2,261 km,......S,,IRI-BRC-to-RTM.pdf
+19489,Ahmedabad - Gorakhpur Exp,Exp,CYI,2,10:48,RTM,5,15:15,267,1,253 km,SFS.TWT,"3A, 2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+22196,Bandra Trm - Virangana Lakshmibai Jhansi SF E,SF,BRC,5,10:50,RTM,5,14:30,220,2,261 km,..TW...,,IRI-BRC-to-RTM.pdf
+19091,Bandra Trm - Gorakhpur Humsafar Exp,Hms,BRC,4,10:50,RTM,5,15:15,265,1,261 km,SF.M...,"SL, 3A",IRI-BRC-to-RTM.pdf
+22975,Bandra Trm - Ramnagar SF Exp,SF,BRC,3,10:50,RTM,5,14:30,220,2,261 km,SF....T,"SL, 3A, 2A",IRI-BRC-to-RTM.pdf
+22444,Bandra Trm - Kanpur Ctrl SF Exp,SF,BRC,2,10:50,RTM,5,14:30,220,1,261 km,.....F.,,IRI-BRC-to-RTM.pdf
+22921,Bandra Trm - Gorakhpur Antyodaya Exp,Ant,BRC,4,10:50,RTM,5,14:30,220,0,261 km,S......,,IRI-BRC-to-RTM.pdf
+09151,Udhna - Madhubani Spl Fare Spl,Exp,BRC,,10:54,RTM,,14:31,217,2,261 km,SF...W.,,IRI-BRC-to-RTM.pdf
+12945,Veraval - Banaras SF Exp,SF,CYI,2,15:45,RTM,5,19:03,198,1,253 km,.M.....,,IRI-BRC-to-RTM.pdf
+05184,Bandra Trm - Azamgarh Spl Fare Spl,Exp,BRC,2,15:45,RTM,5,20:45,300,0,261 km,.M.....,,IRI-BRC-to-RTM.pdf
+19724,Bandra Trm - Jaipur Weekly Exp,Exp,BRC,,15:48,RTM,,20:10,262,0,261 km,....T..,"3A, 2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+19626,Bandra Trm - Daurai Weekly Exp,Exp,BRC,2,15:48,RTM,5,21:05,317,0,261 km,.M.....,,IRI-BRC-to-RTM.pdf
+17295,Kakinada Town - Hisar Exp,Exp,BRC,,15:48,RTM,6,20:45,297,0,261 km,..T....,,IRI-BRC-to-RTM.pdf
+05038,Bandra Trm - Barhni Spl,Exp,BRC,,15:55,RTM,,20:30,275,0,261 km,SF.....,,IRI-BRC-to-RTM.pdf
+12471,Swaraj Exp,SF,BRC,2,16:06,RTM,5,19:45,219,4,261 km,SFSM..T,"3A, 2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+22543,Bandra Trm - Lal Kuan Weekly SF Exp,SF,BRC,2,16:11,RTM,,21:10,299,0,261 km,SF..T..,,IRI-BRC-to-RTM.pdf
+09185,Mumbai Ctrl - Kanpur Anwarganj Spl Fare SF Sp,SF,BRC,,16:15,RTM,,20:15,240,0,261 km,SFS....,"SL, 3A, 2A",IRI-BRC-to-RTM.pdf
+09195,Pratapnagar - Mau Spl Fare SF Spl,SF,BRC,6,16:25,RTM,5,20:10,225,2,261 km,SF.....,,IRI-BRC-to-RTM.pdf
+12475,Hapa - Shri Mata Vaishno Devi Katra SF Exp,SF,CYI,2,16:27,RTM,5,19:45,198,4,253 km,SF..T..,"3A, 2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+12477,Jamnagar - Shri Mata Vaishno Devi Katra SF Ex,SF,CYI,2,16:27,RTM,5,19:45,198,4,253 km,SF...W.,"3A, 2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+12473,Sarvodaya SF Exp,SF,CYI,2,16:27,RTM,5,19:45,198,4,253 km,SF.....,"3A, 2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+20667,Yesvantpur - Khatipura SF Exp,SF,BRC,2,16:30,RTM,6,20:10,220,0,261 km,....T..,"SL, 3A, 2A",IRI-BRC-to-RTM.pdf
+20915,Charlapalli - Indore Humsafar Exp,Hms,BRC,2,16:30,RTM,5,20:10,220,0,261 km,S......,,IRI-BRC-to-RTM.pdf
+16281,Mysuru - Ajmer Exp,Exp,BRC,,16:30,RTM,6,20:10,220,0,261 km,SF.....,,IRI-BRC-to-RTM.pdf
+21907,Mumbai Ctrl - Kathgodam SF Exp,SF,BRC,,16:30,RTM,,20:10,220,0,261 km,...W...,"SL, 3A, 2A",IRI-BRC-to-RTM.pdf
+09189,Mumbai Ctrl - Katihar Spl Fare Spl,Exp,BRC,,16:31,RTM,5,20:10,219,0,261 km,SF.....,"SL, 3A, 2A",IRI-BRC-to-RTM.pdf
+09323,Khadki - Indore Spl Fare Spl,SF,BRC,,16:38,RTM,,20:30,232,1,261 km,SF....T,"SL, 3A, 2A",IRI-BRC-to-RTM.pdf
+09001,Mumbai Ctrl - Bhiwani Spl Fare SF Spl,SF,BRC,3,16:40,RTM,6,21:15,275,0,261 km,SF..T..,,IRI-BRC-to-RTM.pdf
+09005,Bandra Trm - Bhiwani Spl Fare SF Spl,SF,BRC,3,16:40,RTM,6,20:55,255,0,261 km,...W...,,IRI-BRC-to-RTM.pdf
+09023,Mumbai Bandra Trm - Dholpur Spl Fare Puja Spl,Exp,BRC,,16:40,RTM,,21:15,275,0,261 km,...W...,,IRI-BRC-to-RTM.pdf
+03110,Pratapnagar - Kolkata Spl Fare Puja Spl,Exp,BRC,,16:45,RTM,,21:15,270,1,261 km,S....T.,,IRI-BRC-to-RTM.pdf
+12917,Ahmedabad - Hazrat Nizamuddin Gujarat Sampark,SKr,CYI,2,17:05,RTM,5,20:35,210,2,253 km,SF.M...,"3A, 2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+12483,Thiruvananthapuram North - Amritsar SF Exp,SF,BRC,4,17:12,RTM,5,20:48,216,0,261 km,SF...W.,,IRI-BRC-to-RTM.pdf
+22659,Thiruvananthapuram North - Yog Nagari Rishike,SF,BRC,4,17:12,RTM,5,20:48,216,0,261 km,S.....F,,IRI-BRC-to-RTM.pdf
+12217,Kerala Sampark Kranti Exp,SKr,BRC,4,17:12,RTM,5,20:48,216,0,261 km,.M....S,"3A, 2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+19668,Palace Queen Humsafar Exp,Hms,BRC,4,17:12,RTM,6,20:45,213,0,261 km,SF....T,"SL, 3A",IRI-BRC-to-RTM.pdf
+20921,Bandra Trm - Lucknow Jn Weekly SF Exp,SF,BRC,2,17:25,RTM,5,21:05,220,2,261 km,SF.....,"3A, 2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+09119,Pratapnagar - Lal Kuan Spl Fare SF Spl,SF,BRC,6,17:30,RTM,5,21:15,225,2,261 km,S......,,IRI-BRC-to-RTM.pdf
+01908,Udhna - Agra Cantt Spl Fare Spl,Exp,BRC,2,17:35,RTM,5,22:25,290,0,261 km,...W...,"SL, 3A, 2A",IRI-BRC-to-RTM.pdf
+04728,Valsad - Hisar Spl Fare Spl,Exp,BRC,,17:35,RTM,,21:20,225,2,261 km,SF....T,,IRI-BRC-to-RTM.pdf
+12925,Paschim SF Exp,SF,BRC,2,17:50,RTM,5,21:40,230,3,261 km,SMTWTFS,,IRI-BRC-to-RTM.pdf
+04120,Valsad - Subedarganj Spl Fare Spl,Exp,CYI,2,18:10,RTM,5,23:05,295,0,253 km,S......,,IRI-BRC-to-RTM.pdf
+04178,Valsad - Subedarganj Spl Fare Spl,Exp,CYI,,18:10,RTM,,23:05,295,0,253 km,SF...W.,,IRI-BRC-to-RTM.pdf
+01411,Khadki - Sanganer Spl Fare SF Festival Spl,SF,BRC,,18:25,RTM,,22:00,215,0,261 km,....T..,"SL, 3A, 2A",IRI-BRC-to-RTM.pdf
+12263,Pune - Hazrat Nizamuddin AC Duronto Exp,Drnt,BRC,2,18:35,RTM,5,21:55,200,0,261 km,SF..T..,,IRI-BRC-to-RTM.pdf
+12493,Darshan SF Exp,SF,BRC,2,18:35,RTM,6,21:55,200,0,261 km,S......,,IRI-BRC-to-RTM.pdf
+12911,Valsad - Haridwar SF Exp,SF,BRC,2,18:45,RTM,5,22:35,230,2,261 km,SF..T..,"SL, 3A, 2A",IRI-BRC-to-RTM.pdf
+22917,Bandra Trm - Haridwar SF Exp,SF,BRC,2,18:45,RTM,5,22:35,230,0,261 km,...W...,"3A, 2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+09111,Vadodara - Gorakhpur Spl Fare Spl,Exp,BRC,,19:00,RTM,5,22:35,215,1,261 km,.M.....,,IRI-BRC-to-RTM.pdf
+19575,Okha - Nathdwara Road Weekly Exp,Exp,CYI,2,19:20,RTM,6,23:30,250,1,253 km,SF...W.,"3A, 2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+20105,Khadki - Dahar Ka Balaji SF Exp,SF,BRC,,19:47,RTM,,23:25,218,0,261 km,SFS....,"SL, 3A, 2A",IRI-BRC-to-RTM.pdf
+20931,Thiruvananthapuram North - Indore Weekly SF E,SF,BRC,,19:51,RTM,5,23:30,219,1,261 km,.....F.,,IRI-BRC-to-RTM.pdf
+19423,Ahmedabad - Bhagalpur Amrit Bharat Exp,AB,CYI,,20:15,RTM,5,23:45,210,2,253 km,...W...,"II, SL",IRI-BRC-to-RTM.pdf
+11463,Veraval - Jabalpur Exp,Exp,CYI,2,20:26,RTM,5,00:40,254,4,253 km,S.TWTF.,"3A, 2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+11465,Veraval - Jabalpur Exp,Exp,CYI,2,20:26,RTM,5,00:40,254,4,253 km,SF.M...,"3A, 2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+20996,Bandra Trm - Ajmer Weekly SF Exp,SF,BRC,3,20:44,RTM,6,00:50,246,2,261 km,S......,"SL, 3A, 2A",IRI-BRC-to-RTM.pdf
+12951,Mumbai Ctrl - New Delhi Tejas Rajdhani Exp,Raj,BRC,2,21:16,RTM,5,00:25,189,0,261 km,SMTWTFS,,IRI-BRC-to-RTM.pdf
+19309,Shanti Exp,Exp,CYI,2,21:22,RTM,5,01:35,253,5,253 km,SMTWTFS,"SL, 3A, 2A",IRI-BRC-to-RTM.pdf
+12953,August Kranti Tejas Rajdhani Exp,Raj,BRC,2,21:54,RTM,5,01:13,199,1,261 km,SMTWTFS,,IRI-BRC-to-RTM.pdf
+09465,Ahmedabad - Darbhanga Spl Fare Spl,Exp,CYI,2,22:17,RTM,5,01:20,183,0,253 km,.....F.,,IRI-BRC-to-RTM.pdf
+06013,Thiruvananthapuram Ctrl - Madar Spl Fare AC F,Exp,BRC,,22:22,RTM,,02:15,233,1,261 km,...W...,,IRI-BRC-to-RTM.pdf
+12909,Bandra Trm - Hazrat Nizamuddin Garib Rath Exp,GR,BRC,2,22:29,RTM,5,01:50,201,0,261 km,S..T.T.,,IRI-BRC-to-RTM.pdf
+12907,Maharashtra Sampark Kranti Exp,SKr,BRC,2,22:29,RTM,5,01:48,199,0,261 km,SSF..W.,"3A, 2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+12247,Bandra Trm - Hazrat Nizamuddin Yuva Exp,ACSF,BRC,2,22:29,RTM,5,01:50,201,0,261 km,SF.....,"CC, 3E",IRI-BRC-to-RTM.pdf
+22933,Bandra Trm - Jaipur Weekly SF Exp,SF,BRC,,22:29,RTM,5,02:10,221,1,261 km,SF.M...,,IRI-BRC-to-RTM.pdf
+12979,Bandra Trm - Jaipur SF Exp,SF,BRC,3,22:38,RTM,5,02:10,212,3,261 km,..T.T.S,"3A, 2A, 1A, 3E",IRI-BRC-to-RTM.pdf
+06181,Coimbatore - Jaipur Spl Fare AC Spl,ACExp,BRC,,22:38,RTM,,03:05,267,1,261 km,SF....T,,IRI-BRC-to-RTM.pdf
+12995,Bandra Trm - Ajmer SF Exp,SF,BRC,2,22:52,RTM,6,02:30,218,2,261 km,SFS..W.,,IRI-BRC-to-RTM.pdf
+22909,Valsad - Puri Weekly SF Exp,SF,BRC,6,22:52,RTM,5,02:30,218,1,261 km,SF....T,"SL, 3A, 2A",IRI-BRC-to-RTM.pdf
+20163,Bandra Trm - Jabalpur Weekly Superfast Exp,SF,BRC,,22:56,RTM,5,02:45,229,0,261 km,......S,,IRI-BRC-to-RTM.pdf
