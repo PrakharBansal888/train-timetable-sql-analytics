@@ -5,7 +5,7 @@
 [![Pandas](https://img.shields.io/badge/Pandas-2.0+-150458?style=flat&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
 [![Power BI](https://img.shields.io/badge/Power_BI-Ready-F2C811?style=flat&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
 
-An end-to-end data analytics project engineering an automated extraction, cleaning, and quality assurance pipeline from semi-structured India Rail Info (IRI) PDF timetables into a normalized MySQL relational database, ready for advanced SQL analytics and interactive Power BI visualization.
+An end-to-end data analytics project engineering an automated extraction, cleaning, and quality assurance pipeline from semi-structured India Rail Info (IRI) PDF timetables into a normalized MySQL relational database, modeled for advanced SQL analytics and interactive Power BI visualization.
 
 ---
 
@@ -23,7 +23,8 @@ An end-to-end data analytics project engineering an automated extraction, cleani
                                                                       +---------------------+
                                                                       | Downstream Analysis |
                                                                       | - Advanced SQL CTEs |
-                                                                      | - Power BI BI Model |
+                                                                      | - v_trains_clean    |
+                                                                      | - Power BI Model    |
                                                                       +---------------------+
 ```
 
@@ -52,18 +53,22 @@ The automated ingestion script (`scripts/extract_trains.py`) resolves these chal
 
 ---
 
-### 1.3 Data Quality & Reconciliation Audit Table
-To guarantee complete data integrity before database loading, every parsed file was audited against the raw document row counts.
+### 1.3 Data Scope, Export Truncation & Reconciliation Audit
+To maintain complete data honesty, the extracted records are reconciled against both the document headers and printed rows:
 
-| PDF Source | Corridor / Route | PDF Pages | Printed Table Rows | Expected Train Records | Extracted & Loaded | Dropped / Orphan Rows | Data Integrity Status |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| `IRI-BRC-to-ADI.pdf` | Vadodara $\rightarrow$ Ahmedabad | 5 | 241 | 118 | 118 | 0 | 100% Reconciled |
-| `IRI-BRC-to-MMCT.pdf` | Vadodara $\rightarrow$ Mumbai Central | 5 | 241 | 118 | 118 | 0 | 100% Reconciled |
-| `IRI-BRC-to-RTM.pdf` | Vadodara $\rightarrow$ Ratlam | 5 | 241 | 118 | 118 | 0 | 100% Reconciled |
-| `IRI-BRC-to-EKNR.pdf` | Vadodara $\rightarrow$ Ekta Nagar | 1 | 21 | 10 | 10 | 0 | 100% Reconciled |
-| **Total** | **4 Core Corridors** | **16** | **744** | **364** | **364** | **0** | **100% Match (Zero Loss)** |
+| PDF Source | Corridor / Route | Portal Header Count | Printed PDF Rows | Extracted & Loaded | Departure Window Captured | Parsing Match |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| `IRI-BRC-to-ADI.pdf` | Vadodara $\rightarrow$ Ahmedabad | 151 | 118 | 118 | 00:41 – 20:44 | 100% of printed |
+| `IRI-BRC-to-MMCT.pdf` | Vadodara $\rightarrow$ Mumbai Central | 167 | 118 | 118 | 00:06 – 15:30 | 100% of printed |
+| `IRI-BRC-to-RTM.pdf` | Vadodara $\rightarrow$ Ratlam | 129 | 118 | 118 | 00:18 – 22:56 | 100% of printed |
+| `IRI-BRC-to-EKNR.pdf` | Vadodara $\rightarrow$ Ekta Nagar | 10 | 10 | 10 | 05:25 – 18:45 | 100% of printed |
+| **Total** | **4 Core Corridors** | **457** | **364** | **364** | **Combined** | **100% Zero-Loss** |
 
-> **Audit Note:** The IRI portal returns a maximum of 5 pages (118 trains) for high-density trunk routes and 1 page (10 trains) for branch corridors. All 744 raw table rows across 16 pages were processed with **zero orphaned rows** and **zero data dropouts**.
+> **Critical Data Limitation Note:**
+> The India Rail Info portal hard-caps printable outputs at 5 pages (118 trains) for dense trunk routes. Consequently, the dataset captures the **first 118 departures sorted chronologically**. 
+> - For **Vadodara $\rightarrow$ Mumbai Central**, the cutoff occurs at **15:30**, omitting ~49 evening/night departures (~29% of the route).
+> - For **Vadodara $\rightarrow$ Ahmedabad**, the cutoff occurs at **20:44**, omitting ~33 late-night services.
+> - Downstream time-of-day queries and visual distributions are strictly scoped to the observed daytime operational window to avoid survivorship bias.
 
 ---
 
@@ -75,10 +80,8 @@ To guarantee complete data integrity before database loading, every parsed file 
 | `Name` | `"Borivali - Vatva Exp\n"` | `train_name` | `VARCHAR(120)` | Stripped internal whitespace & newline characters |
 | `Duration` | `"2h 4m"` | `duration` | `INT` | Converted text to **124** minutes for mathematical aggregation |
 | `Distance` | `"92 km"` | `distance_km` | `INT` | Extracted numerical digits (92) for speed calculations |
-| `Halts` | `"3"` | `halts` | `INT` | Numeric integer for delay penalty modeling |
+| `Halts` | `"3"` | `halts` | `INT` | Numeric integer for delay penalty regression modeling |
 | `Days` | Visual font colors | `days` | `VARCHAR(10)` | Extracted operational mask (e.g. `SFSMTWT`) via color coordinates |
-
----
 
 ---
 
@@ -86,8 +89,8 @@ To guarantee complete data integrity before database loading, every parsed file 
 
 The complete SQL scripts are located in [`queries/advanced_analytics.sql`](queries/advanced_analytics.sql).
 
-### Query 1: Departure Headways & Corridor Service Droughts
-- **Business Question:** What is the headway (time gap between consecutive departures) on high-density routes (e.g., Vadodara $\rightarrow$ Ahmedabad), and where are the longest service gaps?
+### Query 1: Departure Headways (Observed 00:41 – 20:44 Window on BRC $\rightarrow$ ADI)
+- **Business Question:** What is the headway (time interval between consecutive departures) on the Vadodara $\rightarrow$ Ahmedabad mainline within the observed operational window?
 - **Advanced SQL Techniques:** `LAG() OVER (PARTITION BY ... ORDER BY ...)`, `STR_TO_DATE()`, `TIMESTAMPDIFF()`, Common Table Expressions (CTE).
 
 ```sql
@@ -112,10 +115,10 @@ headway_metrics AS (
 SELECT 
     train_no, train_name, train_type, dep_time, headway_minutes,
     CASE 
-        WHEN headway_minutes >= 120 THEN 'Severe Drought (>= 2h)'
-        WHEN headway_minutes >= 60 THEN 'Moderate Gap (1h - 2h)'
-        ELSE 'High-Frequency (< 1h)'
-    END AS service_frequency_band
+        WHEN headway_minutes >= 120 THEN 'Gap >= 2 Hours'
+        WHEN headway_minutes >= 60 THEN 'Gap 1 - 2 Hours'
+        ELSE 'Frequent (< 1 Hour)'
+    END AS headway_band
 FROM headway_metrics
 ORDER BY headway_minutes DESC
 LIMIT 5;
@@ -123,21 +126,21 @@ LIMIT 5;
 
 **Output:**
 
-| train_no | train_name | train_type | dep_time | headway_minutes | service_frequency_band |
+| train_no | train_name | train_type | dep_time | headway_minutes | headway_band |
 | :--- | :--- | :---: | :---: | :---: | :--- |
-| `12656` | Navjeevan SF Exp | SF | 15:32 | **187** | Severe Drought (>= 2h) |
-| `20823` | Puri - Ajmer SF Exp | SF | 07:47 | **95** | Moderate Gap (1h - 2h) |
-| `12834` | Howrah - Ahmedabad SF Exp | SF | 09:39 | **67** | Moderate Gap (1h - 2h) |
-| `22953` | Gujarat SF Exp | SF | 12:25 | **48** | High-Frequency (< 1h) |
-| `20901` | Gandhinagar Vande Bharat | VB | 10:26 | **38** | High-Frequency (< 1h) |
+| `12656` | Navjeevan SF Exp | SF | 15:32 | **187** | Gap >= 2 Hours |
+| `20823` | Puri - Ajmer SF Exp | SF | 07:47 | **95** | Gap 1 - 2 Hours |
+| `12834` | Howrah - Ahmedabad SF Exp | SF | 09:39 | **67** | Gap 1 - 2 Hours |
+| `22953` | Gujarat SF Exp | SF | 12:25 | **48** | Frequent (< 1 Hour) |
+| `20901` | Gandhinagar Vande Bharat | VB | 10:26 | **38** | Frequent (< 1 Hour) |
 
->  **Key Insight:** While the BRC-ADI corridor operates at high frequency during morning hours (38–48 minute headways), there is a **3-hour and 7-minute (187 mins) service drought** between 12:25 PM and 3:32 PM, highlighting a significant scheduling gap for afternoon business travelers.
+> **Key Finding:** Within the observed 00:41–20:44 timetable window, the single largest service gap is **187 minutes (3h 7m)** between the Gujarat SF Exp (12:25) and Navjeevan SF Exp (15:32), marking the only multi-hour afternoon drought on an otherwise high-frequency corridor.
 
 ---
 
-### Query 2: Speed Efficiency & Rank by Train Category
-- **Business Question:** Which train categories achieve the highest commercial transit speed across corridors, and how do standard trains compare against premium services?
-- **Advanced SQL Techniques:** Chained CTEs, `DENSE_RANK() OVER (ORDER BY avg_speed DESC)`.
+### Query 2: Speed Efficiency & Rank by Train Category (Sample Filter: $N \ge 3$)
+- **Business Question:** How do train categories rank by average commercial speed, filtering out single-service outliers ($N \ge 3$)?
+- **Advanced SQL Techniques:** Chained CTEs, `DENSE_RANK() OVER (ORDER BY avg_speed DESC)`, `HAVING COUNT(*) >= 3`.
 
 ```sql
 WITH train_speeds AS (
@@ -158,6 +161,7 @@ category_summary AS (
         MAX(speed_kmh) AS max_speed_kmh
     FROM train_speeds
     GROUP BY train_type
+    HAVING COUNT(*) >= 3
 )
 SELECT 
     train_type, service_count, avg_speed_kmh, min_speed_kmh, max_speed_kmh,
@@ -174,34 +178,18 @@ LIMIT 5;
 | **VB** (Vande Bharat) | 4 | **80.1** | 58.9 | 92.3 | **1** |
 | **Raj** (Rajdhani) | 4 | **79.2** | 72.3 | 82.9 | **2** |
 | **Drnt** (Duronto) | 9 | **75.2** | 69.6 | 78.3 | **3** |
-| **Tjs** (Tejas) | 1 | **71.2** | 71.2 | 71.2 | **4** |
-| **GR** (Garib Rath) | 4 | **69.9** | 54.5 | 77.9 | **5** |
+| **GR** (Garib Rath) | 4 | **69.9** | 54.5 | 77.9 | **4** |
+| **SKr** (Sampark Kranti) | 9 | **67.1** | 42.7 | 78.7 | **5** |
 
->  **Key Insight:** **Vande Bharat Express** leads all categories at **80.1 km/h average commercial speed** (peaking at 92.3 km/h on BRC-ADI). Premium services (VB, Rajdhani, Duronto) operate **44.8% faster** than standard Express services (`Exp`, 55.3 km/h, ranked 14th) and **84.1% faster** than local MEMU services (43.5 km/h, ranked 18th).
+> **Key Finding:** Premium services consistently top commercial speed rankings: **Vande Bharat** averages **80.1 km/h** (+44.8% vs. standard Express at 55.3 km/h), followed closely by **Rajdhani** at **79.2 km/h** (+43.2%) and **Duronto** at **75.2 km/h** (+36.0%). Standard Express (`Exp`, $n=101$) averages 55.3 km/h, while local `MEMU` services ($n=6$) average 43.5 km/h.
 
 ---
 
-### Query 3: Intermediate Halt Delay Penalty Model
-- **Business Question:** What is the marginal time penalty (in minutes) introduced by each intermediate station halt relative to the fastest non-stop/minimal-halt benchmark on each corridor?
-- **Advanced SQL Techniques:** Chained CTEs, Group Aggregations, Marginal Delay Ratio Modeling.
+### Query 3: Empirical Halt Penalty Model (Ordinary Least Squares Linear Regression)
+- **Business Question:** What is the empirical marginal time cost (minutes added per additional halt) within comparable train categories (Superfast & Express)?
+- **Statistical Model:** OLS slope coefficient $\beta_1 = \frac{\text{Cov}(\text{Halts}, \text{Duration})}{\text{Var}(\text{Halts})} = \frac{\overline{XY} - \bar{X}\bar{Y}}{\overline{X^2} - (\bar{X})^2}$ computed directly via SQL aggregation functions.
 
 ```sql
-WITH corridor_benchmarks AS (
-    SELECT source_file, MIN(duration) AS min_duration_mins
-    FROM trains
-    WHERE duration > 0
-    GROUP BY source_file
-),
-halt_penalty_data AS (
-    SELECT 
-        t.train_no, t.train_name, t.source_file, t.halts, t.duration,
-        b.min_duration_mins,
-        (t.duration - b.min_duration_mins) AS delay_over_fastest,
-        ROUND((t.duration - b.min_duration_mins) / NULLIF(t.halts, 0), 1) AS penalty_per_halt
-    FROM trains t
-    JOIN corridor_benchmarks b ON t.source_file = b.source_file
-    WHERE t.halts > 0
-)
 SELECT 
     CASE 
         WHEN source_file LIKE '%ADI%' THEN 'Vadodara - Ahmedabad'
@@ -209,30 +197,35 @@ SELECT
         WHEN source_file LIKE '%RTM%' THEN 'Vadodara - Ratlam'
         WHEN source_file LIKE '%EKNR%' THEN 'Vadodara - Ekta Nagar'
     END AS corridor,
-    COUNT(*) AS analyzed_trains,
+    COUNT(*) AS sample_size,
     ROUND(AVG(halts), 1) AS avg_halts,
-    ROUND(AVG(delay_over_fastest), 1) AS avg_corridor_delay_mins,
-    ROUND(AVG(penalty_per_halt), 1) AS avg_penalty_per_halt_mins
-FROM halt_penalty_data
+    ROUND(AVG(duration), 1) AS avg_duration_mins,
+    ROUND(
+        (AVG(halts * duration) - AVG(halts) * AVG(duration))
+        / NULLIF(AVG(halts * halts) - AVG(halts) * AVG(halts), 0),
+        1
+    ) AS mins_per_halt_slope
+FROM trains
+WHERE duration > 0 AND train_type IN ('SF', 'Exp')
 GROUP BY source_file
-ORDER BY avg_penalty_per_halt_mins DESC;
+ORDER BY mins_per_halt_slope DESC;
 ```
 
 **Output:**
 
-| Corridor | Analyzed Trains | Avg Halts | Avg Extra Duration vs Fastest | Avg Penalty per Halt |
+| Corridor | Sample Size (SF & Exp) | Avg Halts | Avg Duration | Regression Slope ($\beta_1$) |
 | :--- | :---: | :---: | :---: | :---: |
-| **Vadodara $\rightarrow$ Ratlam** | 58 | 2.7 | 68.4 mins | **42.9 mins / halt** |
-| **Vadodara $\rightarrow$ Ahmedabad** | 99 | 2.6 | 60.8 mins | **33.7 mins / halt** |
-| **Vadodara $\rightarrow$ Mumbai Central** | 115 | 4.8 | 109.9 mins | **28.5 mins / halt** |
-| **Vadodara $\rightarrow$ Ekta Nagar** | 3 | 2.0 | 0.0 mins | **0.0 mins / halt** |
+| **Vadodara $\rightarrow$ Mumbai Central** | 84 | 5.3 | 372.2 mins | **+7.6 mins / halt** |
+| **Vadodara $\rightarrow$ Ratlam** | 91 | 1.6 | 236.2 mins | **+4.2 mins / halt** |
+| **Vadodara $\rightarrow$ Ahmedabad** | 93 | 1.9 | 124.1 mins | **+1.4 mins / halt** |
+| **Vadodara $\rightarrow$ Ekta Nagar** | 5 | 0.0 | 107.8 mins | *Null (zero halt variance)* |
 
->  **Key Insight:** Each additional intermediate halt on the mountainous/grade-heavy **Vadodara $\rightarrow$ Ratlam** corridor imposes a steep **42.9-minute penalty** (due to deceleration, loop-line clearance, and acceleration gradient curves), compared to **28.5 minutes** on the flatter Mumbai trunk line.
+> **Key Finding:** Isolating comparable Superfast and Express trains reveals realistic empirical halt penalties: an additional halt adds an estimated **7.6 minutes** to transit time on the Mumbai trunk line, **4.2 minutes** on the Ratlam line, and **1.4 minutes** on the short Ahmedabad corridor.
 
 ---
 
-### Query 4: Duration Variance & Outlier Detection
-- **Business Question:** Which specific train services deviate most severely from their route's average transit duration, flagging operational bottlenecks?
+### Query 4: Route Duration Outlier Detection (Empirical Variance)
+- **Business Question:** Which specific train services show the largest duration deviation from their corridor's average transit duration?
 - **Advanced SQL Techniques:** `AVG() OVER (PARTITION BY ...)` Window Function, Variance Calculation, Percentage Deviation Modeling.
 
 ```sql
@@ -267,54 +260,57 @@ LIMIT 5;
 | `22954` | Gujarat SF Exp | BRC $\rightarrow$ MMCT | 440 | 359.2 | **+80.8 mins** | **+22.5%** |
 | `19019` | Bandra - Haridwar Exp | BRC $\rightarrow$ RTM | 307 | 233.0 | **+74.0 mins** | **+31.7%** |
 
->  **Key Insight:** Train `19819` (Vadodara - Kota Exp) is the single largest operational outlier, taking **6 hours 35 minutes (395 mins)** on a route where the average is 3 hours 53 minutes (**+69.5% slower**), caused by extensive passenger halts and freight overtaking stops.
+> **Key Finding:** Train `19819` (Vadodara - Kota Exp) exhibits the single largest duration variance across all examined corridors, taking **395 minutes (6h 35m)** compared to the 233.0-minute route average (**+162.0 minutes / +69.5% slower**).
 
 ---
 
-### Query 5: Cumulative Departure Capacity & Hourly Traffic Concentration
-- **Business Question:** What is the cumulative departure distribution throughout the 24-hour cycle, and what time windows experience the heaviest scheduling concentration?
-- **Advanced SQL Techniques:** Running Total Window Function (`SUM() OVER (ORDER BY ... ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)`), Relative Cumulative %.
+### Query 5: Departure Volume Weighted by Weekly Operational Frequency
+- **Business Question:** When are corridor departures concentrated across the day, properly weighting weekly/periodic services by actual runs per week?
+- **Data Reality Addressed:** In the raw timetable, only 58 of 364 trains run daily; 306 are periodic or weekly services. Treating every record as a daily departure artificially inflates weekly capacity by up to $7\times$. Furthermore, afternoon/evening volumes on BRC-MMCT reflect the IRI 15:30 export truncation.
+- **Advanced Techniques:** String length replacement for active operational days (`LENGTH(REPLACE(days, '.', ''))`), Running Total Window Function (`SUM() OVER (...)`).
 
 ```sql
-WITH hourly_slots AS (
+WITH weighted_hourly AS (
     SELECT 
         CAST(SUBSTRING_INDEX(dep_time, ':', 1) AS UNSIGNED) AS dep_hour,
-        COUNT(*) AS departures_in_hour
+        COUNT(*) AS scheduled_trains_in_slot,
+        SUM(LENGTH(REPLACE(days, '.', ''))) AS weekly_departures_in_slot
     FROM trains
     WHERE dep_time IS NOT NULL AND dep_time != ''
     GROUP BY CAST(SUBSTRING_INDEX(dep_time, ':', 1) AS UNSIGNED)
 )
 SELECT 
     CONCAT(LPAD(dep_hour, 2, '0'), ':00 - ', LPAD(dep_hour, 2, '0'), ':59') AS time_window,
-    departures_in_hour,
-    SUM(departures_in_hour) OVER (
+    scheduled_trains_in_slot,
+    weekly_departures_in_slot,
+    SUM(weekly_departures_in_slot) OVER (
         ORDER BY dep_hour 
         ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
-    ) AS running_total_departures,
+    ) AS running_weekly_departures,
     CONCAT(
-        ROUND(SUM(departures_in_hour) OVER (
+        ROUND(SUM(weekly_departures_in_slot) OVER (
             ORDER BY dep_hour 
             ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
-        ) * 100.0 / SUM(departures_in_hour) OVER (), 1), 
+        ) * 100.0 / SUM(weekly_departures_in_slot) OVER (), 1),
         '%'
-    ) AS cumulative_traffic_pct
-FROM hourly_slots
+    ) AS cumulative_weekly_traffic_pct
+FROM weighted_hourly
 ORDER BY dep_hour ASC;
 ```
 
 **Output:**
 
-| Time Window | Departures in Hour | Running Total Departures | Cumulative Traffic % |
-| :---: | :---: | :---: | :---: |
-| `00:00 - 00:59` | 16 | 16 | 4.4% |
-| `01:00 - 01:59` | 28 | 44 | 12.1% |
-| `03:00 - 03:59` | 23 | 80 | 22.0% |
-| `05:00 - 05:59` | 29 | 132 | 36.3% |
-| `09:00 - 09:59` | **30 (Peak)** | 206 | 56.6% |
-| `10:00 - 10:59` | 29 | 235 | **64.6%** |
-| `12:00 - 13:59` | **4 (Lull)** | 254 | 69.8% |
+| Time Window | Scheduled Train Records | Weekly Departures in Slot | Running Weekly Departures | Cumulative Weekly Traffic % |
+| :---: | :---: | :---: | :---: | :---: |
+| `00:00 - 00:59` | 16 | 82 | 82 | 7.3% |
+| `01:00 - 01:59` | 28 | 73 | 155 | 13.9% |
+| `03:00 - 03:59` | 23 | 62 | 272 | 24.4% |
+| `05:00 - 05:59` | 29 | 100 | 441 | 39.5% |
+| `09:00 - 09:59` | 30 | 109 | 667 | 59.8% |
+| `10:00 - 10:59` | 29 | 102 | 769 | 68.9% |
+| `12:00 - 13:59` | 4 | 20 | 817 | 73.2% |
 
->  **Key Insight:** Traffic concentration is heavily front-loaded: **64.6% of all daily departures depart before 11:00 AM**, with the morning peak between 09:00 and 10:59 (59 departures). Conversely, the 12:00–14:00 window experiences a sharp midday lull with only 4 departures, indicating an underutilized track capacity window.
+> **Key Finding:** Across all 364 scheduled services, there are **1,116 total departures per week** (406 daily, 710 periodic). Morning traffic peaks heavily at 09:00–10:59 (211 weekly departures). Note that departure volume drops off sharply after 15:00 primarily due to the 5-page cutoff on the high-density Mumbai corridor.
 
 ---
 
@@ -322,14 +318,15 @@ ORDER BY dep_hour ASC;
 
 ```text
 ├── data/
-│   ├── raw_pdfs/            # Original PDF timetable schedules (16 pages across 4 routes)
-│   └── all_trains.csv       # Clean, normalized dataset (364 records)
+│   ├── raw_pdfs/              # Original PDF timetable schedules (16 pages across 4 routes)
+│   └── all_trains.csv         # Clean, normalized dataset (364 records)
 ├── queries/
-│   └── advanced_analytics.sql # Advanced SQL queries (CTEs, Window Functions, Analytics)
+│   ├── advanced_analytics.sql # Advanced SQL queries (CTEs, Window Functions, OLS Regression)
+│   └── v_trains_clean.sql     # Dimensional database view pre-configured for Power BI
 ├── scripts/
-│   └── extract_trains.py    # Automated PDF ingestion, regex cleaning & MySQL ETL script
-├── .gitignore               # Ignored environments, cache, and scratch files
-└── README.md                # Project documentation, data quality audit & SQL showcase
+│   └── extract_trains.py      # Automated PDF ingestion, regex cleaning & MySQL ETL script
+├── .gitignore                 # Ignored environments, cache, and scratch files
+└── README.md                  # Project documentation, data quality audit & SQL showcase
 ```
 
 ---
@@ -355,15 +352,15 @@ export MYSQL_DB="trains_db"
 python scripts/extract_trains.py
 ```
 
-### 4. Execute Advanced Analytical Queries
+### 4. Create the Power BI View & Run Analytical Queries
 ```bash
+mysql -u root -p trains_db < queries/v_trains_clean.sql
 mysql -u root -p trains_db < queries/advanced_analytics.sql
 ```
 
 ---
 
 ## Project Roadmap
-- [x] **Section 1: Data Pipeline & Quality Assurance (ETL)** — PDF parsing, color-coded days extraction, duration normalization, 100% reconciliation audit.
-- [x] **Section 2: Advanced SQL Analytics** — Window functions (`LAG`, `DENSE_RANK`, `RUNNING TOTAL`), Chained CTEs, service headway analysis, halt penalty modeling, and outlier detection.
-- [ ] **Section 3: Interactive Power BI Dashboard** — Executive overview, speed distribution by train type, and departure density heatmaps.
-
+- [x] **Section 1: Data Pipeline & Quality Assurance (ETL)** — PDF parsing, color-coded days extraction, duration normalization, honest truncation documentation.
+- [x] **Section 2: Advanced SQL Analytics** — Window functions (`LAG`, `DENSE_RANK`, `RUNNING TOTAL`), Chained CTEs, OLS regression slope for halt penalty, duration variance, and weekly-weighted traffic distribution.
+- [ ] **Section 3: Interactive Power BI Dashboard** — Executive overview, speed distribution by train type, and departure density heatmaps using `v_trains_clean`.
